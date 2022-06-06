@@ -1,0 +1,80 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Entities\" />
+    <None Remove="DataAccess\" />
+    <None Remove="DataAccess\EntityFramework\" />
+    <None Remove="MySql.Data" />
+    <None Remove="MySql.Data.EntityFrameworkCore" />
+    <None Remove="Utilities\" />
+    <None Remove="Utilities\Results\" />
+    <None Remove="Entities\Concrete\" />
+    <None Remove="Utilities\Security\" />
+    <None Remove="Utilities\Security\Jwt\" />
+    <None Remove="Microsoft.IdentityModel.Tokens" />
+    <None Remove="Utilities\Security\Encryption\" />
+    <None Remove="System.IdentityModel.Tokens.Jwt" />
+    <None Remove="Extensions\" />
+    <None Remove="Utilities\Security\Hashing\" />
+    <None Remove="CrossCuttingConcerns\" />
+    <None Remove="CrossCuttingConcerns\Validation\" />
+    <None Remove="FluentValidation" />
+    <None Remove="Utilities\Interceptors\" />
+    <None Remove="Castle.Core" />
+    <None Remove="Aspects\" />
+    <None Remove="Aspects\Autofac\" />
+    <None Remove="Aspects\Autofac\Validation\" />
+    <None Remove="Utilities\Messages\" />
+    <None Remove="Aspects\Autofac\Transaction\" />
+    <None Remove="Utilities\IoC\" />
+    <None Remove="DependencyResolvers\" />
+    <None Remove="CrossCuttingConcerns\Caching\" />
+    <None Remove="CrossCuttingConcerns\Caching\Microsoft\" />
+    <None Remove="Aspects\Autofac\Caching\" />
+    <None Remove="Microsoft.AspNetCore.Http" />
+    <None Remove="Entities\Abstract\" />
+    <None Remove="Entities\Concrete\User\" />
+    <None Remove="Entities\Concrete\Employee\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="DataAccess\" />
+    <Folder Include="DataAccess\EntityFramework\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Utilities\Results\" />
+    <Folder Include="Entities\Concrete\" />
+    <Folder Include="Utilities\Security\" />
+    <Folder Include="Utilities\Security\Jwt\" />
+    <Folder Include="Utilities\Security\Encryption\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Utilities\Security\Hashing\" />
+    <Folder Include="CrossCuttingConcerns\" />
+    <Folder Include="CrossCuttingConcerns\Validation\" />
+    <Folder Include="Utilities\Interceptors\" />
+    <Folder Include="Aspects\" />
+    <Folder Include="Aspects\Autofac\" />
+    <Folder Include="Aspects\Autofac\Validation\" />
+    <Folder Include="Utilities\Messages\" />
+    <Folder Include="Aspects\Autofac\Transaction\" />
+    <Folder Include="Utilities\IoC\" />
+    <Folder Include="DependencyResolvers\" />
+    <Folder Include="CrossCuttingConcerns\Caching\" />
+    <Folder Include="CrossCuttingConcerns\Caching\Microsoft\" />
+    <Folder Include="Aspects\Autofac\Caching\" />
+    <Folder Include="Entities\Abstract\" />
+    <Folder Include="Entities\Concrete\User\" />
+    <Folder Include="Entities\Concrete\Employee\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.16.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.16.0" />
+    <PackageReference Include="FluentValidation" Version="10.3.6" />
+    <PackageReference Include="Castle.Core" Version="4.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+  </ItemGroup>
+</Project>
